@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercicio</title>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Calculos</h1>
+    <main>
+        <section class="Somar">
+            <h2>Soma</h2>
+            <input id="soma1" type="number" placeholder="Insert a number">
+            <br>
+            <input id="soma2" type="number" placeholder="Insert a number">
+            <br>
+            <button onclick="soma()">Calcular</button>
+            <p id="respSoma"></p>
+        </section>
+        <section class="Subt">
+            <h2>Subtração</h2>
+            <input id="sub1" type="number" placeholder="Insert a number">
+            <br>
+            <input id="sub2" type="number" placeholder="Insert a number">
+            <br>
+            <button onclick="sub()">Calcular</button>
+            <p id="respSub"></p>
+        </section>
+        <section class="Divi">
+            <h2>Divisão</h2>
+            <input id="div1" type="number" placeholder="Insert a number">
+            <br>
+            <input id="div2" type="number" placeholder="Insert a number">
+            <br>
+            <button onclick="div()">Calcular</button>
+            <p id="respDiv"></p>
+        </section>
+        <section class="Multipli">
+            <h2>Multiplicação</h2>
+            <input id="multi1" type="number" placeholder="Insert a number">
+            <br>
+            <input id="multi2" type="number" placeholder="Insert a number">
+            <br>
+            <button onclick="multi()">Calcular</button>
+            <p id="respMulti"></p>
+        </section>
+        <section class="Med">
+            <h2>Média</h2>
+            <input id="m1" type="number" placeholder="Insert a number">
+            <br>
+            <input id="m2" type="number" placeholder="Insert a number">
+            <br>
+            <input id="m3" type="number" placeholder="Insert a number">
+            <br>
+            <button onclick="media()">Calcular</button>
+            <p id="respMedia"></p>
+        </section>
+        <section class="Iter">
+            <h2>Iteração (for)</h2>
+            <input id="numeroInput" placeholder="Insert a number">
+            <button onclick="contar()">contar</button>
+            <p id="result"></p>
+        </section>
+    </main>
+
+</body>
+
+</html>

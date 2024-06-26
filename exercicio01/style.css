@@ -1,0 +1,8 @@
+body{
+    font-family: "Playwrite US Trad", cursive;
+    background-color: rgba(84, 131, 139, 0.651);
+    text-align: center;
+    box-shadow: rgba(141, 180, 79, 0.938) 0px 10px 20px;
+    flex-direction: row;
+    
+}
