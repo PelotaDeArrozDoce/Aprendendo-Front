@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <style>
+         body {
+                font-family: "Open Sans", sans-serif;
+            }
+    </style>
+</head>
+
+<body>
+    <h1>Mensagem Automatica por Whatsapp</h1>
+    <h2>Enviar Mensagem por whatsapp</h2>
+    <br><br>
+    <div class="wrap-form">
+        <div class="wrap-input">
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome">
+        </div>
+        <br><br>
+        <div class="wrap-input">
+            <label for="mensagem">Mensagem para envio:</label>
+            <textarea name="text" id="mensagem"></textarea>
+        </div>
+        <br><br>
+            <button class="wrap-Ipad" onclick="ConferirMensagemWhatsapp()">Conferir Mensagem</button>
+    </div>
+    <br><br>
+    <div id="printRespostas">
+        <p>Nome: <span id="confNome"></span></p>
+        <br>
+        <p>Mensagem: <span id="confMsg"></span></p>
+        <br>
+        <p>Data: <span id="confDate"></span></p>
+        <br>
+        <button class="btnzap" onclick="enviar()">Enviar Mensagem</button>
+    </div>
+    <h2 class="Light/Dark"></h2>
+    <button class="toggle-btn">
+        <span class="circle"><i class="icon fas fa-sun"></i></span>
+
+    </button>
+</body>
+
+<script>
+    document.querySelector(".toggle-btn").
+    addEventListener('click', () =>{
+        document.body.classList.toggle('dark-mode')
+        if (document.body.classList.contains
+        ('dark-mode')) {
+            document.querySelector(".icon").classList.remove
+            ('fa-sun');
+            document.querySelector(".icon").classList.add
+            ('fa-moon');
+        } else{
+            document.querySelector(".icon").classList.remove
+            ('fa-moon');
+            document.querySelector(".icon").classList.add
+            ('fa-sun');
+        }
+    });
+</script>
+
+</html>
